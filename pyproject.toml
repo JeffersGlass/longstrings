@@ -1,0 +1,17 @@
+[project]
+name = "longstrings"
+version = "0.1.0"
+description = "Find long string comments in Python code"
+readme = "README.md"
+authors = [
+    { name = "Jeff Glass", email = "glass.jeffrey@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = []
+
+[project.scripts]
+longstrings = "longstrings:entry_point"
+
+[build-system]
+requires = ["uv_build>=0.8.5,<0.9.0"]
+build-backend = "uv_build"
