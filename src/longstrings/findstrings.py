@@ -26,7 +26,7 @@ def find_long_docstrings(source_code: str, min_length, filename: Path | str = ""
                 yield construct_result_string(token.string, filename, token.start[0])
 
 def construct_result_string(source: str, filename: Path | str, lineno: int) -> str:
-    return f"{filename}({lineno}):{source}"
+    return f"{filename}({lineno}):\n{source}"
 
 """_summary_
 This is a long string
