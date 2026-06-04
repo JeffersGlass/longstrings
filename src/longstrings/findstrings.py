@@ -11,7 +11,7 @@ def debug(f: Callable) -> Callable:
     return inner
 
 def process_file(path: Path | str, min_length=100) -> Generator[str, None, None]:
-    with open(path, "r", encoding='utf-8') as f:
+    with open(path, "r") as f:
         src = f.read()
 
     yield from find_long_docstrings(src, min_length, filename=path)
