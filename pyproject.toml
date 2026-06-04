@@ -1,6 +1,6 @@
 [project]
 name = "longstrings"
-version = "0.1.3"
+version = "0.1.4"
 description = "Find long string comments in Python code"
 readme = "README.md"
 authors = [
